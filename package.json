@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/edersonlrf/node-002-fd-video-maker/issues"
   },
-  "homepage": "https://github.com/edersonlrf/node-002-fd-video-maker#readme"
+  "homepage": "https://github.com/edersonlrf/node-002-fd-video-maker#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
