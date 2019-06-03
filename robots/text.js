@@ -23,7 +23,7 @@ async function robot() {
     limitMaximumSentences(content)
     await fetchKeywordsOfAllSentences(content)
 
-    state.save()
+    state.save(content)
 
     async function fetchContentFromWikipedia(content) {
         const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey)
@@ -42,14 +42,15 @@ async function robot() {
 
         function removeBlankLinesAndMarkdown(text) {
             const allLines = text.split('\n')
-            const whitoutBlankLinesAndMarkdown = allLines.filter((line) => {
+
+            const withoutBlankLinesAndMarkdown = allLines.filter((line) => {
                 if (line.trim().length === 0 || line.trim().startsWith('=')) {
                     return false;
                 }
                 return true;
             })
 
-            return whitoutBlankLinesAndMarkdown.join(' ')
+            return withoutBlankLinesAndMarkdown.join(' ')
         }
 
         function removeDatesInParentheses(text) {
