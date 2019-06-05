@@ -8,3 +8,4 @@ Projeto para fazer vídeos automatizados.
 - console.cloud.google.com/apis/credentials
 - cloud.ibm.com/services/natural-language-understanding
 - www.algorithmia.com
+- imagemagick.org
