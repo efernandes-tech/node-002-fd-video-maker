@@ -35,3 +35,20 @@ File: `google-search.json`
   "searchEngineId": "000698257139961718300:qdhm8xqmtxa"
 }
 ```
+
+File: `google-youtube.json`
+
+```
+{
+  "web": {
+    "client_id":"000698257139961718300.apps.googleusercontent.com",
+    "project_id":"video-maker-000698257139961718300",
+    "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+    "token_uri":"https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret":"000698257139961718300",
+    "redirect_uris":["http://localhost:5000/oauth2callback"],
+    "javascript_origins":["http://localhost:5000"]
+  }
+}
+```
