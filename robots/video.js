@@ -7,6 +7,8 @@ const path = require('path')
 const rootPath = path.resolve(__dirname, '..')
 
 async function robot() {
+    console.log('> [video-robot] Starting...')
+    
     const content = state.load()
 
     await convertAllImages(content)
@@ -59,7 +61,7 @@ async function robot() {
                         return reject(error)
                     }
 
-                    console.log(`> Image converted: ${inputFile}`)
+                    console.log(`> [video-robot] Image converted: ${outputFile}`)
                     resolve()
                 })
         })
@@ -118,7 +120,7 @@ async function robot() {
                         return reject(error)
                     }
 
-                    console.log(`> Sentence created: ${outputFile}`)
+                    console.log(`> [video-robot] Sentence created: ${outputFile}`)
                     resolve()
                 })
         })
@@ -132,7 +134,7 @@ async function robot() {
                     if (error) {
                         return reject(error)
                     }
-                    console.log('> Creating YouTube thumbnail')
+                    console.log('> [video-robot] YouTube thumbnail created')
                     resolve()
                 })
         })
