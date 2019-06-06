@@ -4,8 +4,8 @@ Projeto para fazer vídeos automatizados.
 ## Links:
 - www.github.com/filipedeschamps
 - www.youtube.com/playlist?list=PLMdYygf53DP4YTVeu0JxVnWq01uXrLwHi
-- cse.google.com/cse/setup/basic
-- console.cloud.google.com/apis/credentials
-- cloud.ibm.com/services/natural-language-understanding
+- www.cse.google.com/cse/setup/basic
+- www.console.cloud.google.com/apis/credentials
+- www.cloud.ibm.com/services/natural-language-understanding
 - www.algorithmia.com
-- imagemagick.org
+- www.imagemagick.org
