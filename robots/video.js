@@ -141,7 +141,7 @@ async function robot() {
     }
 
     async function createAfterEffectsScript(content) {
-        return state.saveScript(content)
+        await state.saveScript(content)
     }
 
     async function renderVideoWithAfterEffects() {
